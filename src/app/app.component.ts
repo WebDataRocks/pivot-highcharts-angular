@@ -56,7 +56,7 @@ export class AppComponent {
             }
           }
         });
-        this.Highcharts.chart("highchartsContainer-1", <Highcharts.Options>data);
+        this.Highcharts.chart("highchartsContainer-1", data);
       },
       data => {
         this.Highcharts.setOptions({
@@ -66,7 +66,7 @@ export class AppComponent {
             }
           }
         });
-        this.Highcharts.chart("highchartsContainer-1", <Highcharts.Options>data);
+        this.Highcharts.chart("highchartsContainer-1", data);
       }
     );
   }
@@ -89,7 +89,7 @@ export class AppComponent {
             }
           }
         });
-        this.Highcharts.chart("highchartsContainer-2", <Highcharts.Options>data);
+        this.Highcharts.chart("highchartsContainer-2", data);
       },
       data => {
         this.Highcharts.setOptions({
@@ -99,7 +99,7 @@ export class AppComponent {
             }
           }
         });
-        this.Highcharts.chart("highchartsContainer-2", <Highcharts.Options>data);
+        this.Highcharts.chart("highchartsContainer-2", data);
       }
     );
   }
