@@ -137,6 +137,37 @@ declare namespace WebDataRocks {
     customizeCell(
       customizeCellFunction: (cell: CellBuilder, data: Cell) => void
     ): void;
+    amcharts?: {
+      getData(options: { slice?: Slice; prepareDataFunction?: (rawData: any) => any },
+        callbackHandler: ((rawData: GetDataValueObject, error?: GetDataErrorObject) => void) | string,
+        updateHandler?: ((rawData: GetDataValueObject, error?: GetDataErrorObject) => void) | string): void;
+      getNumberFormatPattern(format: object): string;
+      getCategoryName(rawData: any): string;
+      getMeasureNameByIndex(rawData: any, measureIndex: number): string;
+      getNumberOfMeasures(rawData: any): number;
+    };
+    fusioncharts?: {
+      getData(options: { type: string; slice?: Slice; prepareDataFunction?: (rawData: any) => any },
+        callbackHandler: ((rawData: GetDataValueObject, error?: GetDataErrorObject) => void) | string,
+        updateHandler?: ((rawData: GetDataValueObject, error?: GetDataErrorObject) => void) | string): void;
+      getNumberFormat(format: object): object;
+    };
+    googlecharts?: {
+      getData(options: { type?: string; slice?: Slice; prepareDataFunction?: (rawData: any) => any },
+        callbackHandler: ((rawData: GetDataValueObject, error?: GetDataErrorObject) => void) | string,
+        updateHandler?: ((rawData: GetDataValueObject, error?: GetDataErrorObject) => void) | string): void;
+      getNumberFormat(format: object): object;
+      getNumberFormatPattern(format: object): string;
+    };
+    highcharts?: {
+      getData(options: { type?: string; slice?: Slice; xAxisType?: string; valuesOnly?: boolean, withDrilldown?: boolean, prepareDataFunction?: (rawData: any) => any },
+        callbackHandler: ((rawData: GetDataValueObject, error?: GetDataErrorObject) => void) | string,
+        updateHandler?: ((rawData: GetDataValueObject, error?: GetDataErrorObject) => void) | string): void;
+      getAxisFormat(format: object): string;
+      getPointXFormat(format: object): string;
+      getPointYFormat(format: object): string;
+      getPointZFormat(format: object): string;
+    };
   }
 
   interface Report {
@@ -367,5 +398,16 @@ declare namespace WebDataRocks {
     text?: string;
     addClass(value?: string): void;
     toHtml(): string;
+  }
+
+  interface GetDataValueObject {
+    data: object[];
+    meta: object;
+  }
+
+  interface GetDataErrorObject {
+    dataHeight: number;
+    dataWidth: number;
+    errorMessage: string;
   }
 }
