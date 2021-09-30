@@ -1,4 +1,4 @@
-### WebDataRocks Pivot Table integration with Angular 4 and Highcharts
+### WebDataRocks Pivot Table integration with Angular 11 and Highcharts
 [WebDataRocks](https://www.webdatarocks.com/) is a free JavaScript library for **web reporting** and **data visualization**. It is designed with simplicity of integration in mind.
 
 This repository holds the sample project of **WebDataRocks** with [Angular 4](https://angular.io/) framework and [Highcharts](https://www.highcharts.com/). Its purpose is to show how to add an interactive dashboard with a pivot table and charts to your Angular application with minimum efforts and time. 
