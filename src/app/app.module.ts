@@ -1,14 +1,18 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { WebDataRocksPivot } from "./webdatarocks/webdatarocks.angular4";
-import { HighchartsChartComponent } from "highcharts-angular";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { WebdatarocksPivotModule } from 'ng-webdatarocks';
 
-import { AppComponent } from "./app.component";
+import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [AppComponent, WebDataRocksPivot, HighchartsChartComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    WebdatarocksPivotModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

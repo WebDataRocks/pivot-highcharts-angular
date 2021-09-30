@@ -1,14 +1,21 @@
-import { Component, ViewChild } from "@angular/core";
-import { WebDataRocksPivot } from "./webdatarocks/webdatarocks.angular4";
+import { Component } from '@angular/core';
+import { ViewChild } from '@angular/core';
+import { WebdatarocksComponent } from 'ng-webdatarocks';
 import * as Highcharts from "highcharts";
+// import "webdatarocks/webdatarocks.highcharts.js";
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  @ViewChild("pivot1") child: WebDataRocksPivot;
+  @ViewChild('pivot1') child: WebdatarocksComponent;
+  Highcharts: typeof Highcharts = Highcharts;
+
+  onPivotReady(pivot: WebDataRocks.Pivot): void {
+    console.log('[ready] WebdatarocksPivotModule', this.child);
+  }
 
   public pivotReport = {
     dataSource: {
@@ -21,20 +28,19 @@ export class AppComponent {
     }
   };
 
-  Highcharts: typeof Highcharts = Highcharts;
-
-  onPivotReady(pivot: WebDataRocks.Pivot): void {
-    console.log("[ready] WebDataRocksPivot", this.child);
-  }
-
   onCustomizeCell(
     cell: WebDataRocks.CellBuilder,
-    data: WebDataRocks.Cell
+    data: WebDataRocks.CellData
   ): void {
-    //console.log("[customizeCell] WebDataRocksPivot");
-    if (data.isClassicTotalRow) cell.addClass("fm-total-classic-r");
-    if (data.isGrandTotalRow) cell.addClass("fm-grand-total-r");
-    if (data.isGrandTotalColumn) cell.addClass("fm-grand-total-c");
+    if (data.isClassicTotalRow) {
+      cell.addClass('fm-total-classic-r');
+    }
+    if (data.isGrandTotalRow) {
+      cell.addClass('fm-grand-total-r');
+    }
+    if (data.isGrandTotalColumn) {
+      cell.addClass('fm-grand-total-c');
+    }
   }
 
   onReportComplete(): void {
