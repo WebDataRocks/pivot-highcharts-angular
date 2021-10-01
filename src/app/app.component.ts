@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ViewChild } from '@angular/core';
 import { WebdatarocksComponent } from 'ng-webdatarocks';
 import * as Highcharts from "highcharts";
-// import "webdatarocks/webdatarocks.highcharts.js";
+import "webdatarocks/webdatarocks.highcharts.js";
 
 @Component({
   selector: 'app-root',
