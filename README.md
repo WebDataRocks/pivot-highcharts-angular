@@ -1,27 +1,36 @@
-### WebDataRocks Pivot Table integration with Angular 11 and Highcharts
-[WebDataRocks](https://www.webdatarocks.com/) is a free JavaScript library for **web reporting** and **data visualization**. It is designed with simplicity of integration in mind.
+# Example of integrating WebDataRocks with the Angular framework and Highcharts
 
-This repository holds the sample project of **WebDataRocks** with [Angular 11](https://angular.io/) framework and [Highcharts](https://www.highcharts.com/). Its purpose is to show how to add an interactive dashboard with a pivot table and charts to your Angular application with minimum efforts and time. 
-### How to get started with WebDataRocks, Angular and Highcharts
+This repository contains the sample project of [WebDataRocks](https://www.webdatarocks.com/) with [Angular framework](https://angular.io/) and [Highcharts](https://www.highcharts.com/).
 
-#### Step 1: Download or clone the GitHub project 
-The pivot table and chart instances are already embedded in the page.
-#### Step 2: Install npm packages
-`npm install`
-#### Step 3: Run an application
-`ng serve`
+This project is also available as [a live demo](https://codesandbox.io/s/qko3pl0mxw)!
 
-Your application will run at `http://localhost:4200/`.
+## Prerequisites
 
-### Documentation
-Please refer to our tutorials to find out more details about the integration process:
-* [Integration with Angular 4](https://www.webdatarocks.com/doc/integration-with-angular/)
+- [Node.js 10 through 16](https://nodejs.org/en/)
+
+
+## Run the project
+1. Download or clone this project from GitHub:
+```bash
+git clone https://github.com/WebDataRocks/pivot-highcharts-angular.git
+cd pivot-highcharts-angular
+```
+2. Install npm packages:
+```
+npm install
+```
+3. Run the project:
+```
+npm start
+```
+
+You can access the project at `http://localhost:4200/`.
+
+## Related docs
+For more details about the integration process check out the following tutorials:
+* [Integration with Angular](https://www.webdatarocks.com/doc/integration-with-angular/)
 * [Integration with Highcharts](https://www.webdatarocks.com/doc/integration-with-highcharts/)
-
-### Advanced options
-* [WebDataRocks: how to change report themes](https://www.webdatarocks.com/doc/changing-report-themes/)
 * [Highcharts: how to set options to charts](https://www.highcharts.com/docs/getting-started/how-to-set-options)
 
-### Live demo
-To get a real feel of WebDataRocks in combination with Highcharts, you can play with the dashboard on CodeSandBox:
-[![Edit WebDataRocks-Highcharts-Angular](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/qko3pl0mxw)
+## Support
+Feel free to ask WebDataRocks-related questions on [StackOverflow](https://stackoverflow.com/questions/tagged/webdatarocks).
