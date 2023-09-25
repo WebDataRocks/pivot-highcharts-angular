@@ -1,6 +1,6 @@
 # Example of integrating WebDataRocks with the Angular framework and Highcharts
 
-This repository contains the sample project that shows how to integrate [WebDataRocks](https://www.webdatarocks.com/) with [Angular framework](https://angular.io/) and [Highcharts](https://www.highcharts.com/).
+This repository contains a sample project that shows how to integrate [WebDataRocks](https://www.webdatarocks.com/) with the [Angular framework](https://angular.io/) and [Highcharts](https://www.highcharts.com/).
 
 The project is also available as [a live demo](https://codesandbox.io/s/qko3pl0mxw)!
 
