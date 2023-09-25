@@ -27,7 +27,7 @@ npm start
 You can access the project at `http://localhost:4200/`.
 
 ## Related docs
-For more details about the integration process check out the following tutorials:
+
 * [Integration with Angular](https://www.webdatarocks.com/doc/integration-with-angular/)
 * [Integration with Highcharts](https://www.webdatarocks.com/doc/integration-with-highcharts/)
 * [Highcharts: how to set options to charts](https://www.highcharts.com/docs/getting-started/how-to-set-options)
