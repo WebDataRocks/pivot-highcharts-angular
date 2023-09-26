@@ -2,7 +2,7 @@
 
 This repository contains a sample project that shows how to integrate [WebDataRocks](https://www.webdatarocks.com/) with the [Angular framework](https://angular.io/) and [Highcharts](https://www.highcharts.com/).
 
-The project is also available as [a live demo](https://codesandbox.io/s/qko3pl0mxw)!
+The project is also available as [a live demo](https://codesandbox.io/s/qko3pl0mxw).
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ You can access the project at `http://localhost:4200/`.
 
 * [Integration with Angular](https://www.webdatarocks.com/doc/integration-with-angular/)
 * [Integration with Highcharts](https://www.webdatarocks.com/doc/integration-with-highcharts/)
-* [Highcharts: how to set options to charts](https://www.highcharts.com/docs/getting-started/how-to-set-options)
+* [Highcharts: how to set chart options](https://www.highcharts.com/docs/getting-started/how-to-set-options)
 
 ## Support
 Feel free to ask WebDataRocks-related questions on [StackOverflow](https://stackoverflow.com/questions/tagged/webdatarocks).
