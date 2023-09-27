@@ -16,11 +16,11 @@ git clone https://github.com/WebDataRocks/pivot-highcharts-angular.git
 cd pivot-highcharts-angular
 ```
 2. Install npm packages:
-```
+```bash
 npm install
 ```
 3. Run the project:
-```
+```bash
 npm start
 ```
 
