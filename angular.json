@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": ["webdatarocks"],
+            "allowedCommonJsDependencies": ["@webdatarocks/webdatarocks", "highcharts"],
             "outputPath": "dist/pivot-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -22,12 +22,12 @@
             "aot": true,
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "./node_modules/webdatarocks/webdatarocks.min.css",
+              "./node_modules/@webdatarocks/webdatarocks/webdatarocks.min.css",
               "src/styles.css"
             ],
             "scripts": [
-              "./node_modules/webdatarocks/webdatarocks.toolbar.min.js",
-              "./node_modules/webdatarocks/webdatarocks.js"
+              "./node_modules/@webdatarocks/webdatarocks/webdatarocks.toolbar.min.js",
+              "./node_modules/@webdatarocks/webdatarocks/webdatarocks.js"
             ]
           },
           "configurations": {
@@ -41,7 +41,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -116,7 +115,6 @@
       }
     }
   },
-  "defaultProject": "pivot-angular",
   "cli": {
     "analytics": "853f390c-cfd7-45cc-bd9d-1a818446e77c"
   }
