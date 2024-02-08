@@ -2,6 +2,7 @@
   "name": "webdatarocks-angular-highcharts",
   "version": "0.0.0",
   "license": "MIT",
+  "description": "Example of integrating the WebDataRocks Pivot Table component with Angular and Highcharts",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
