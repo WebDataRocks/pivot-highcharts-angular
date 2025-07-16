@@ -6,7 +6,7 @@ The project is also available as a [live demo](https://codesandbox.io/s/qko3pl0m
 
 ## Prerequisites
 
-- [Node.js 10 through 16](https://nodejs.org/en/)
+- [Node.js 10 or later](https://nodejs.org/en/)
 
 
 ## Run the project
