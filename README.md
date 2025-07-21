@@ -33,4 +33,5 @@ You can access the project at `http://localhost:4200/`.
 * [Highcharts: how to set chart options](https://www.highcharts.com/docs/getting-started/how-to-set-options)
 
 ## Support
-Feel free to ask WebDataRocks-related questions on [StackOverflow](https://stackoverflow.com/questions/tagged/webdatarocks).
+
+For WebDataRocks-related questions, bug reports and features requests, please [create an issue on our GitHub](https://github.com/WebDataRocks/web-pivot-table/issues).
