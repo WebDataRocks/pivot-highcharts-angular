@@ -29,7 +29,7 @@ You can access the project at `http://localhost:4200/`.
 ## Related docs
 
 * [Integration with Angular](https://www.webdatarocks.com/doc/angular/how-to-start-online-reporting/)
-* [Integration with Highcharts](https://www.webdatarocks.com/doc/integration-with-highcharts/)
+* [Integration with Highcharts](https://www.webdatarocks.com/doc/angular/integration-with-highcharts/)
 * [Highcharts: how to set chart options](https://www.highcharts.com/docs/getting-started/how-to-set-options)
 
 ## Support
