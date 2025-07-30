@@ -1,0 +1,17 @@
+<div id="container">
+  <app-top-menu></app-top-menu>
+  <div id="chartAndPivot">
+    <app-wbr-pivot #pivot
+      [toolbar]="true"
+      [report]="report"
+      (reportcomplete)="onReportComplete()">
+    </app-wbr-pivot>
+    <div id="chart">
+      <highcharts-chart 
+        [options]="chartOptions"
+        [oneToOne]="true"
+        style="display: block;">
+      </highcharts-chart>
+    </div>
+  </div>  
+</div>
