@@ -1,6 +1,7 @@
 # Example of integrating WebDataRocks with the Angular framework and Highcharts
+[![WebDataRocks](https://cdn.webdatarocks.com/readmes/angular-highcharts.png)](https://www.webdatarocks.com/?r=gh_sample_angular_highcharts)
 
-This repository contains a sample project that shows how to integrate [WebDataRocks](https://www.webdatarocks.com/) with the [Angular framework](https://angular.dev/) and [Highcharts](https://www.highcharts.com/).
+This repository contains a sample project that shows how to integrate [WebDataRocks](https://www.webdatarocks.com/?r=gh_sample_angular_highcharts) with the [Angular framework](https://angular.dev/) and [Highcharts](https://www.highcharts.com/).
 
 The project is also available as a [live demo](https://codesandbox.io/s/qko3pl0mxw).
 
@@ -28,10 +29,10 @@ You can access the project at `http://localhost:4200/`.
 
 ## Related docs
 
-* [Integration with Angular](https://www.webdatarocks.com/doc/angular/how-to-start-online-reporting/?r=gh_sample_angular)
-* [Integration with Highcharts](https://www.webdatarocks.com/doc/angular/integration-with-highcharts/?r=gh_sample_angular)
+* [Integration with Angular](https://www.webdatarocks.com/doc/angular/how-to-start-online-reporting/?r=gh_sample_angular_highcharts)
+* [Integration with Highcharts](https://www.webdatarocks.com/doc/angular/integration-with-highcharts/?r=gh_sample_angular_highcharts)
 * [Highcharts: how to set chart options](https://www.highcharts.com/docs/getting-started/how-to-set-options)
 
 ## Support
 
-For WebDataRocks-related questions, bug reports, and features requests, please [create an issue on our GitHub](https://github.com/WebDataRocks/web-pivot-table/issues?r=gh_sample_angular).
+For WebDataRocks-related questions, bug reports, and features requests, please [create an issue on our GitHub](https://github.com/WebDataRocks/web-pivot-table/issues?r=gh_sample_angular_highcharts).
