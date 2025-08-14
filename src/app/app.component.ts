@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, viewChild } from '@angular/core';
 
 import { WebdatarocksPivotModule, WebdatarocksComponent } from "@webdatarocks/ngx-webdatarocks";
 import "@webdatarocks/webdatarocks/webdatarocks.highcharts.js";
@@ -12,11 +12,11 @@ import 'highcharts/modules/accessibility';
 @Component({
   selector: 'app-root',
   imports: [WebdatarocksPivotModule, HighchartsChartComponent, TopMenuComponent],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
 export class App {
-  @ViewChild("pivot") pivotRef!: WebdatarocksComponent;
+  readonly pivot = viewChild.required<WebdatarocksComponent>("pivot");
 
   Highcharts = Highcharts;
   chartOptions: Highcharts.Options = {
@@ -53,12 +53,12 @@ export class App {
   onReportComplete() {
     // Unsubscribing from reportcomplete
     // We need it only to track the initialization of WebDataRocks
-    this.pivotRef.webDataRocks.off("reportcomplete");
+    this.pivot().webDataRocks.off("reportcomplete");
     this.createChart();
   }
 
   createChart() {
-    this.pivotRef.webDataRocks.highcharts?.getData(
+    this.pivot().webDataRocks.highcharts?.getData(
       {
         type: "spline"
       },

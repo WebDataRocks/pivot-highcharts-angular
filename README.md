@@ -6,7 +6,7 @@ The project is also available as a [live demo](https://codesandbox.io/s/qko3pl0m
 
 ## Prerequisites
 
-- [Node.js 10 or later](https://nodejs.org/en/)
+- [Node.js 20 or later](https://nodejs.org/en/)
 
 
 ## Run the project
@@ -34,4 +34,4 @@ You can access the project at `http://localhost:4200/`.
 
 ## Support
 
-For WebDataRocks-related questions, bug reports and features requests, please [create an issue on our GitHub](https://github.com/WebDataRocks/web-pivot-table/issues).
+For WebDataRocks-related questions, bug reports, and features requests, please [create an issue on our GitHub](https://github.com/WebDataRocks/web-pivot-table/issues).

@@ -21,12 +21,7 @@ yarn-error.log
 *.sublime-workspace
 
 # Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+.vscode/
 
 # Miscellaneous
 /.angular/cache
@@ -40,3 +35,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+/.editorconfig
+
+package-lock.json
