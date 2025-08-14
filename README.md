@@ -28,10 +28,10 @@ You can access the project at `http://localhost:4200/`.
 
 ## Related docs
 
-* [Integration with Angular](https://www.webdatarocks.com/doc/angular/how-to-start-online-reporting/)
-* [Integration with Highcharts](https://www.webdatarocks.com/doc/angular/integration-with-highcharts/)
+* [Integration with Angular](https://www.webdatarocks.com/doc/angular/how-to-start-online-reporting/?r=gh_sample_angular)
+* [Integration with Highcharts](https://www.webdatarocks.com/doc/angular/integration-with-highcharts/?r=gh_sample_angular)
 * [Highcharts: how to set chart options](https://www.highcharts.com/docs/getting-started/how-to-set-options)
 
 ## Support
 
-For WebDataRocks-related questions, bug reports, and features requests, please [create an issue on our GitHub](https://github.com/WebDataRocks/web-pivot-table/issues).
+For WebDataRocks-related questions, bug reports, and features requests, please [create an issue on our GitHub](https://github.com/WebDataRocks/web-pivot-table/issues?r=gh_sample_angular).
