@@ -1,7 +1,7 @@
 @import "@webdatarocks/webdatarocks/webdatarocks.min.css";
 
 #container {
-    padding: 80px 0 0;
+    padding: 100px 0 0;
     color: #555;
     margin: 14px 0;
     text-rendering: optimizeLegibility !important;
@@ -13,7 +13,7 @@
     background: #fff;
     position: relative;
     border: 2px solid rgb(233, 241, 243);
-    border-radius: 2px;
+    border-radius: 1.125rem;
   }
 
   #chart {
