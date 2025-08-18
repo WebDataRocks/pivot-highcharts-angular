@@ -3,8 +3,6 @@
 
 This repository contains a sample project that shows how to integrate [WebDataRocks](https://www.webdatarocks.com/?r=rm_angular_highcharts) with the [Angular framework](https://angular.dev/) and [Highcharts](https://www.highcharts.com/).
 
-The project is also available as a [live demo](https://codesandbox.io/s/qko3pl0mxw).
-
 ## Prerequisites
 
 - [Node.js 20 or later](https://nodejs.org/en/)
