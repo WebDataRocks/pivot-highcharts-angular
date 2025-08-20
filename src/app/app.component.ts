@@ -1,111 +1,74 @@
-import { Component } from '@angular/core';
-import { ViewChild } from '@angular/core';
-import { WebdatarocksComponent } from '@webdatarocks/ngx-webdatarocks';
-import * as Highcharts from "highcharts";
+import { Component, viewChild } from '@angular/core';
+
+import { WebdatarocksPivotModule, WebdatarocksComponent } from "@webdatarocks/ngx-webdatarocks";
 import "@webdatarocks/webdatarocks/webdatarocks.highcharts.js";
+
+import { TopMenuComponent } from '../components/top-menu/top-menu.component';
+
+import { HighchartsChartComponent } from 'highcharts-angular';
+import * as Highcharts from "highcharts";
+import 'highcharts/modules/accessibility';
 
 @Component({
   selector: 'app-root',
+  imports: [WebdatarocksPivotModule, HighchartsChartComponent, TopMenuComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrl: './app.component.css'
 })
-export class AppComponent {
-  @ViewChild('pivot1') child: WebdatarocksComponent;
-  Highcharts: typeof Highcharts = Highcharts;
+export class App {
+  readonly pivot = viewChild.required<WebdatarocksComponent>("pivot");
 
-  onPivotReady(pivot: WebDataRocks.Pivot): void {
-    console.log('[ready] WebdatarocksPivotModule', this.child);
-  }
-
-  public pivotReport = {
+  Highcharts = Highcharts;
+  chartOptions: Highcharts.Options = {
+    title: { text: '' },
+    series: []
+  };
+  report = {
     dataSource: {
-      filename: "https://cdn.webdatarocks.com/data/data.csv"
+      filename: "https://cdn.webdatarocks.com/data/data.csv",
     },
     slice: {
-      rows: [{ uniqueName: "Country" }],
-      columns: [{ uniqueName: "Measures" }],
-      measures: [{ uniqueName: "Price", aggregation: "sum" }]
-    }
+      rows: [
+        {
+          uniqueName: "Country",
+        },
+      ],
+      columns: [
+        {
+          uniqueName: "Business Type",
+        },
+        {
+          uniqueName: "Measures",
+        },
+      ],
+      measures: [
+        {
+          uniqueName: "Price",
+          aggregation: "sum",
+        },
+      ],
+    },
   };
 
-  onCustomizeCell(
-    cell: WebDataRocks.CellBuilder,
-    data: WebDataRocks.CellData
-  ): void {
-    if (data.isClassicTotalRow) {
-      cell.addClass('fm-total-classic-r');
-    }
-    if (data.isGrandTotalRow) {
-      cell.addClass('fm-grand-total-r');
-    }
-    if (data.isGrandTotalColumn) {
-      cell.addClass('fm-grand-total-c');
-    }
+  onReportComplete() {
+    // Unsubscribing from reportcomplete
+    // We need it only to track the initialization of WebDataRocks
+    this.pivot().webDataRocks.off("reportcomplete");
+    this.createChart();
   }
 
-  onReportComplete(): void {
-    this.child.webDataRocks.off("reportcomplete");
-    this.createAreaChart();
-    this.createBarChart();
-  }
-
-  createAreaChart() {
-    this.child.webDataRocks.highcharts.getData(
+  createChart() {
+    this.pivot().webDataRocks.highcharts?.getData(
       {
-        type: "areaspline"
+        type: "spline"
       },
-      data => {
-        this.Highcharts.setOptions({
-          plotOptions: {
-            series: {
-              color: "#2a8000" // set colors of the series
-            }
-          }
-        });
-        this.Highcharts.chart("highchartsContainer-1", data);
+      // Function called when data for the chart is ready
+      (data) => {
+        this.chartOptions = data;
       },
-      data => {
-        this.Highcharts.setOptions({
-          plotOptions: {
-            series: {
-              color: "#2a8000" // set colors of the series
-            }
-          }
-        });
-        this.Highcharts.chart("highchartsContainer-1", data);
-      }
-    );
-  }
-  /* Create a bar chart that shows a preconfigured slice */
-  createBarChart() {
-    this.child.webDataRocks.highcharts.getData(
-      {
-        slice: {
-          rows: [{ uniqueName: "Country" }],
-          columns: [{ uniqueName: "Measures" }],
-          measures: [{ uniqueName: "Quantity", aggregation: "sum" }]
-        },
-        type: "bar"
-      },
-      data => {
-        this.Highcharts.setOptions({
-          plotOptions: {
-            series: {
-              color: "#00a3cc" // set colors of the series
-            }
-          }
-        });
-        this.Highcharts.chart("highchartsContainer-2", data);
-      },
-      data => {
-        this.Highcharts.setOptions({
-          plotOptions: {
-            series: {
-              color: "#00a3cc" // set colors of the series
-            }
-          }
-        });
-        this.Highcharts.chart("highchartsContainer-2", data);
+      // Function called on report changes (filtering, sorting, etc.)
+      (data) => {
+        this.chartOptions = data;
       }
     );
   }

@@ -1,24 +1,18 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<h1>Angular 16 integration with WebDataRocks and Highcharts</h1>
-<app-wbr-pivot #pivot1 
-          [toolbar]="true"
-          [report]="pivotReport"
-          [width]="'100%'"
-          [height]="500"
-          [customizeCell]="onCustomizeCell"
-          (ready)="onPivotReady($event)"
-          (reportcomplete)="onReportComplete()">
-    WebDataRocks will appear here
-</app-wbr-pivot>
-
-<table>
-    <tr>
-      <td style="width: 800px;">
-        <div id="highchartsContainer-1" style="width:500px;height:400px;"></div>
-      </td>
-      <td>
-        <div id="highchartsContainer-2" style="width:500px;height:400px;"></div>
-      </td>
-    </tr>
-</table>
-
+<div id="container">
+  <app-top-menu></app-top-menu>
+  <div id="chartAndPivot">
+    <app-wbr-pivot #pivot
+      [toolbar]="true"
+      [report]="report"
+      [height]="400"
+      (reportcomplete)="onReportComplete()">
+    </app-wbr-pivot>
+    <div id="chart">
+      <highcharts-chart 
+        [options]="chartOptions"
+        [oneToOne]="true"
+        style="display: block;">
+      </highcharts-chart>
+    </div>
+  </div>  
+</div>
