@@ -33,4 +33,4 @@ You can access the project at `http://localhost:4200/`.
 
 ## Support
 
-For WebDataRocks-related questions, bug reports, and features requests, please [create an issue on our GitHub](https://github.com/WebDataRocks/web-pivot-table/issues?r=rm_angular_highcharts).
+For WebDataRocks-related questions, bug reports, and feature requests, please [create an issue on our GitHub](https://github.com/WebDataRocks/web-pivot-table/issues?r=rm_angular_highcharts).
