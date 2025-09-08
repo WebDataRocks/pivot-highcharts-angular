@@ -31,6 +31,12 @@ You can access the project at `http://localhost:4200/`.
 * [Integration with Highcharts](https://www.webdatarocks.com/doc/angular/integration-with-highcharts/?r=rm_angular_highcharts)
 * [Highcharts: how to set chart options](https://www.highcharts.com/docs/getting-started/how-to-set-options)
 
+## WebDataRocks licensing
+
+This WebDataRocks sample project is released under the MIT license (free and open-source).
+
+[WebDataRocks](https://www.webdatarocks.com/?r=rm_angular_highcharts) is distributed under the terms and conditions of the WebDataRocks End User License Agreement: [https://www.webdatarocks.com/license-agreement/](https://www.webdatarocks.com/license-agreement/?r=rm_angular_highcharts).
+
 ## Support
 
 For WebDataRocks-related questions, bug reports, and feature requests, please [create an issue on our GitHub](https://github.com/WebDataRocks/web-pivot-table/issues?r=rm_angular_highcharts).
