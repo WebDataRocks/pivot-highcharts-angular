@@ -1,5 +1,8 @@
 # Example of integrating WebDataRocks with the Angular framework and Highcharts
 [![WebDataRocks](https://cdn.webdatarocks.com/readmes/angular-highcharts.png)](https://www.webdatarocks.com/?r=rm_angular_highcharts)
+Website: [webdatarocks.com](https://www.webdatarocks.com?r=rm_angular_highcharts)
+
+[![Github Stars](https://img.shields.io/github/stars/webdatarocks?style=social)](https://github.com/webdatarocks) [![Twitter](https://img.shields.io/twitter/follow/WebDataRocks?style=social)](https://twitter.com/WebDataRocks)
 
 This repository contains a sample project that shows how to integrate [WebDataRocks](https://www.webdatarocks.com/?r=rm_angular_highcharts) with the [Angular framework](https://angular.dev/) and [Highcharts](https://www.highcharts.com/).
 
